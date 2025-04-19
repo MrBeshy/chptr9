@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Survey Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea,
+        input[type="date"] {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Music Survey</h1>
+    <form>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="comments">What kind of music do you like?</label>
+        <textarea id="comments" name="comments" rows="3" cols="60"></textarea>
+
+        <fieldset>
+            <legend>How often do you listen to music?</legend>
+            <input type="radio" name="frequency" value="daily" id="daily"><label for="daily">Daily</label>
+            <input type="radio" name="frequency" value="weekly" id="weekly"><label for="weekly">Weekly</label>
+            <input type="radio" name="frequency" value="rarely" id="rarely"><label for="rarely">Rarely</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Favorite Genre</legend>
+            <label for="genre">Select Genre:</label>
+            <select id="genre" name="genre" size="3">
+                <option>Pop</option>
+                <option>Rock</option>
+                <option>Jazz</option>
+                <option>Classical</option>
+            </select>
+        </fieldset>
+
+        <label for="listenDate">Date you last listened to music:</label>
+        <input type="date" id="listenDate" name="listenDate"><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <div class="footer">
+        <p>Created by: Beshoy Iskandar</p>
+        <p>Email: doris@gmail.com</p>
+    </div>
+</body>
+</html>
